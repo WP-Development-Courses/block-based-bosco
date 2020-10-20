@@ -1,3 +1,77 @@
 /*
 Theme Name: Block-Based Bosco
+Text Domain: block-based-bosco
+(^^^ needs to be set for Gutenberg to detect template parts).
  */
+
+/*
+Layout
+ */
+
+.site {
+  border-bottom: 5px solid #cc0000;
+  border-top: 5px solid #cc0000;
+}
+
+.wp-site-blocks {
+  max-width: calc(1px * var(--wp--custom--content--full-width));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-block-post-title {
+  /* Use `calc()` to number convert to pixels. */
+  max-width: calc(1px * var(--wp--custom--content--wide-width));
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.wp-block-post-content {
+  /* Use `calc()` to number convert to pixels. */
+  max-width: calc(1px * var(--wp--custom--content--normal-width));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Typography */
+:root {
+  font-size: var(--wp--preset--font-size--normal);
+  font-family: Lora, Georgia, serif;
+}
+
+/* Colors */
+
+/*
+Template Parts
+ */
+
+/* Header */
+.site-header {
+  border-bottom: 1px solid #ccc;
+  padding: 2.618em 0;
+}
+.wp-block-site-title {
+  margin: 0;
+  text-align: center;
+}
+.site-title a {
+  border: none;
+  text-decoration: none;
+}
+.wp-block-site-tagline {
+  font-size: 1.618rem;
+  margin: 0;
+  text-align: center;
+}
+
+/*
+Main content
+ */
+
+
+.wp-block-post-title {
+  /* We need to set this on the post title, as articles currently don't have a wrapper */
+  margin-top: 7.6875rem;
+}
+

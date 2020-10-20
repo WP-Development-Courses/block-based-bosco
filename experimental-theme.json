@@ -1,0 +1,27 @@
+{
+  "global": {
+    "styles": {
+      "color": {
+        "background": "#fff",
+        "text": "#222",
+        "link": "#c00"
+      }
+    },
+      "settings": {
+        "color": {
+          "link": true
+        },
+        "custom": {
+          "content": {
+            "normalWidth": 520,
+            "wideWidth": 750,
+            "fullWidth": 840
+          },
+          "typography": {
+            "rootSize": "16px",
+            "lineHeight": 1.45
+          }
+        }
+      }
+    }
+  }
