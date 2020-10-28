@@ -62,6 +62,21 @@ Template Parts
   text-align: center;
 }
 
+/*
+Footer
+ */
+
+.site-footer {
+  border-top: 1px solid #ccc;
+  color: #757575;
+  margin-top: 3.75rem;
+  padding: 1.159rem 1.618rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
 /*--------------------------------------------------------------
 Content
 --------------------------------------------------------------*/
@@ -175,5 +190,23 @@ p.wp-block-post-author__name {
 }
 
 /*
-Blocks
+Templates
  */
+
+/* == Archives === */
+.posts-navigation {
+  font-size: 1.159rem;
+  margin-top: 4.1875rem;
+}
+
+.posts-navigation .wp-block-group__inner-container {
+  display: flex;
+}
+
+.posts-navigation .wp-block-group__inner-container div {
+  flex-grow: 1;
+}
+
+.posts-navigation .wp-block-group__inner-container div:nth-child(2) {
+  text-align: right;
+}
