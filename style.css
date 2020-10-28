@@ -127,6 +127,9 @@ Content
   max-width: calc(1px * var(--wp--custom--content--normal-width));
   margin-left: auto;
   margin-right: auto;
+  /* Fix aligned images from breaking out of the container */
+  clear: both;
+  overflow: hidden;
 }
 
 
