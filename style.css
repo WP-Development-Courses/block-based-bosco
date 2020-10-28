@@ -44,16 +44,20 @@ Template Parts
   border-bottom: 1px solid #ccc;
   padding: 2.618em 0;
 }
+
 .wp-block-site-title {
   margin: 0;
   text-align: center;
 }
-.site-title a {
+
+.wp-block-site-title a {
   border: none;
   text-decoration: none;
 }
+
 .wp-block-site-tagline {
   font-size: 1.618rem;
+  font-weight: bold;
   margin: 0;
   text-align: center;
 }
