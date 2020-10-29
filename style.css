@@ -65,13 +65,13 @@ Template Parts
 /* == Navigation === */
 
 /* By default the navigation template part has a top and bottom border. */
-.main-navigation {
+.wp-block-navigation {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
 
 /* If the navigation template part comes immediately after the header, we do not need the top border. */
-.site-header + .main-navigation {
+.site-header + .wp-block-navigation {
   border-top: 0;
 }
 
