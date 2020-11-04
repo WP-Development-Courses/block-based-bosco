@@ -1,6 +1,14 @@
 <?php
+/**
+ * Theme setup.
+ */
+
+if ( ! isset( $content_width ) ) {
+	$content_width = 750;
+}
 
 function bbb_add_theme_supports() {
+	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'post-thumbnails' );
 }
 add_action( 'after_setup_theme', 'bbb_add_theme_supports' );
@@ -25,6 +33,7 @@ function bbb_enqueue_styles() {
 	wp_enqueue_style( 'bbb-lora', bbb_font_url(), array(), null );
 }
 add_action( 'wp_enqueue_scripts', 'bbb_enqueue_styles' );
+add_action( 'enqueue_block_editor_assets', 'bbb_enqueue_styles' );
 
 /**
  * Returns the Google font stylesheet URL, if available.
@@ -40,15 +49,9 @@ function bbb_font_url() {
 	 * Translators: If there are characters in your language that are not supported
 	 * by Lora, translate this to 'off'. Do not translate into your own language.
 	 */
-	if ( 'off' !== _x( 'on', 'Lora font: on or off', 'bbb' ) ) {
+	if ( 'off' !== _x( 'on', 'Lora font: on or off', 'block-based-bosco' ) ) {
 		$font_url = add_query_arg( 'family', urlencode( 'Lora:400,700,400italic,700italic' ), "//fonts.googleapis.com/css" );
 	}
 
 	return $font_url;
 }
-
-function bbb_enqueue_editor_styles() {
-	add_editor_style( 'style.css');
-}
-
-add_action( 'after_setup_theme', 'bbb_enqueue_editor_styles' );

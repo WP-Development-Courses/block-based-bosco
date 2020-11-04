@@ -1,8 +1,18 @@
 /*
 Theme Name: Block-Based Bosco
+Version: 1.0
+Requires PHP: 7.0
+Requires at least: 5.5
+Tested up to: 5.5.3
+Description: Experimental Full Site Editing Theme
+Author: Frank Klein
+Author URI: https://wpdevelopment.courses/
+Theme URI: https://wpdevelopment.courses/articles/introducing-block-based-bosco/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, featured-images
 Text Domain: block-based-bosco
-(^^^ needs to be set for Gutenberg to detect template parts).
- */
+*/
 
 /*
 Global
@@ -17,8 +27,9 @@ img {
 Layout
  */
 
-/* This is the wrapper for all FSE blocks */
-.wp-site-blocks {
+/* These are the wrappers for all FSE blocks, the first on the frontend, the second in the Site Editor. */
+.wp-site-blocks,
+.editor-styles-wrapper .edit-site-block-editor__block-list {
   max-width: calc(1px * var(--wp--custom--content--full-width));
   margin-left: auto;
   margin-right: auto;
