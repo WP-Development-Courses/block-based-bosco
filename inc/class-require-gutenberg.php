@@ -69,17 +69,17 @@ if ( ! class_exists( 'WPThemes_Require_Gutenberg' ) ) {
 			}
 			?>
 			<div class="notice notice-warning require-gutenberg-notice-wrapper notice-alt<?php echo ( $active_step ) ? ' active-step-' . esc_attr( $active_step ) : ''; ?>">
-				<p><?php esc_html_e( 'This is an experimental theme and requires the Gutenberg plugin to be installed with the "Full Site Editing" experiment enabled.', 'textdomain' ); ?></p>
+				<p><?php esc_html_e( 'This is an experimental theme and requires the Gutenberg plugin to be installed with the "Full Site Editing" experiment enabled.', 'block-based-bosco' ); ?></p>
 				<div class="require-gutenberg require-gutenberg-install">
-					<p><?php esc_html_e( 'The Gutenberg plugin is not installed. Click the button below to install it.', 'textdomain' ); ?></p>
-					<p><button class="button" onclick="wpThemesRequireGutenberg.installPlugin();" aria-label="<?php esc_attr_e( 'Install Gutenberg', 'textdomain' ); ?>"><?php esc_html_e( 'Install Gutenberg', 'textdomain' ); ?></button></p>
+					<p><?php esc_html_e( 'The Gutenberg plugin is not installed. Click the button below to install it.', 'block-based-bosco' ); ?></p>
+					<p><button class="button" onclick="wpThemesRequireGutenberg.installPlugin();" aria-label="<?php esc_attr_e( 'Install Gutenberg', 'block-based-bosco' ); ?>"><?php esc_html_e( 'Install Gutenberg', 'block-based-bosco' ); ?></button></p>
 				</div>
 				<div class="require-gutenberg require-gutenberg-activate">
-					<p><?php esc_html_e( 'The Gutenberg plugin is installed but not activated, or the "Full Site Editing" experiment is not enabled. Click the button below to enable the plugin and experiment.', 'textdomain' ); ?></p>
-					<p><button class="button" onclick="wpThemesRequireGutenberg.activatePlugin();"><?php esc_html_e( 'Activate Plugin & Experiment.', 'textdomain' ); ?></button></p>
+					<p><?php esc_html_e( 'The Gutenberg plugin is installed but not activated, or the "Full Site Editing" experiment is not enabled. Click the button below to enable the plugin and experiment.', 'block-based-bosco' ); ?></p>
+					<p><button class="button" onclick="wpThemesRequireGutenberg.activatePlugin();"><?php esc_html_e( 'Activate Plugin & Experiment.', 'block-based-bosco' ); ?></button></p>
 				</div>
 				<div class="require-gutenberg require-gutenberg-success">
-					<p><?php esc_html_e( 'Congratulations! All steps required were completed. Enjoy your Full Site Editing experience.', 'textdomain' ); ?></p>
+					<p><?php esc_html_e( 'Congratulations! All steps required were completed. Enjoy your Full Site Editing experience.', 'block-based-bosco' ); ?></p>
 				</div>
 			</div>
 			<?php
@@ -123,9 +123,9 @@ if ( ! class_exists( 'WPThemes_Require_Gutenberg' ) ) {
 
 						// Tweak the button.
 						jQuery( '.notice .require-gutenberg-install .button' )
-							.html( '<?php esc_html_e( 'Installing Gutenberg...', 'textdomain' ); ?>' )
+							.html( '<?php esc_html_e( 'Installing Gutenberg...', 'block-based-bosco' ); ?>' )
 							.addClass( 'updating-message' )
-							.attr( 'aria-label', '<?php esc_attr_e( 'Installing Gutenberg...', 'textdomain' ); ?>' );
+							.attr( 'aria-label', '<?php esc_attr_e( 'Installing Gutenberg...', 'block-based-bosco' ); ?>' );
 
 						// Install the plugin.
 						wp.updates.installPlugin( {
@@ -145,7 +145,7 @@ if ( ! class_exists( 'WPThemes_Require_Gutenberg' ) ) {
 								// Remove previous errors.
 								jQuery( '.require-gutenberg-install .error' ).remove();
 								jQuery( '.require-gutenberg-install' )
-									.append( '<div class="error"><p><?php esc_html_e( 'An error occured:', 'textdomain' ); ?></p><p>' + e.message + '</p><p><?php esc_html_e( 'Please check your browser console for more details', 'textdomain' ); ?></p></div>' );
+									.append( '<div class="error"><p><?php esc_html_e( 'An error occured:', 'block-based-bosco' ); ?></p><p>' + e.message + '</p><p><?php esc_html_e( 'Please check your browser console for more details', 'block-based-bosco' ); ?></p></div>' );
 
 								console.log( e );
 							}
@@ -177,7 +177,7 @@ if ( ! class_exists( 'WPThemes_Require_Gutenberg' ) ) {
 
 								// There was an error.
 								jQuery( '.require-gutenberg-activate' )
-									.append( '<div class="error"><p><?php esc_html_e( 'An error occured', 'textdomain' ); ?>:</p><p><?php esc_html_e( 'Could not activate the plugin. Please go to the plugins page on your dashboard and manually activate the plugin.', 'textdomain' ); ?></p></div>' );
+									.append( '<div class="error"><p><?php esc_html_e( 'An error occured', 'block-based-bosco' ); ?>:</p><p><?php esc_html_e( 'Could not activate the plugin. Please go to the plugins page on your dashboard and manually activate the plugin.', 'block-based-bosco' ); ?></p></div>' );
 							}
 						} );
 					},
