@@ -8,7 +8,7 @@ Requires PHP: 7.0
 License: GNU General Public License v2.0 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Full-Site Editing experimental theme. Tested with Gutenberg 9.2.
+Full-Site Editing experimental theme. Tested with Gutenberg 9.3.0
 
 == Description ==
 
@@ -20,8 +20,8 @@ Development for this theme is done on GitHub: https://github.com/WP-Development-
 
 = 1.0 =
 
-* Release date: 4 November 2020
+* Release date: 5 November 2020
 
 == Resources ==
 
-* RequireGutenberg class: https://github.com/WordPress/theme-experiments/blob/master/require-gutenberg/require-gutenberg.php licenced under GPL2
+* RequireGutenberg class: https://github.com/WordPress/theme-experiments/blob/master/require-gutenberg/require-gutenberg.php licensed under GPL v2.0
