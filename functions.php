@@ -3,6 +3,8 @@
  * Theme setup.
  */
 
+require_once __DIR__ . '/inc/class-require-gutenberg.php';
+
 if ( ! isset( $content_width ) ) {
 	$content_width = 750;
 }
