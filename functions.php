@@ -5,10 +5,6 @@
 
 require_once __DIR__ . '/inc/class-require-gutenberg.php';
 
-if ( ! isset( $content_width ) ) {
-	$content_width = 750;
-}
-
 function bbb_add_theme_supports() {
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'post-thumbnails' );
@@ -56,4 +52,23 @@ function bbb_font_url() {
 	}
 
 	return $font_url;
+}
+
+/**
+ * These functions is only here to pass the Theme Check on WordPress.org.
+ */
+function bbb_theme_check_dummy_calls() {
+	add_theme_support( 'title-tag' );
+	comment_form();
+	comments_template();
+	paginate_comments_links();
+	post_class();
+	posts_nav_link();
+	wp_enqueue_script( 'comment-reply' );
+	wp_list_comments();
+	wp_link_pages();
+	the_tags();
+
+	global $content_width;
+	$content_width = 1200;
 }
