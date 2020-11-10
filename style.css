@@ -1,0 +1,335 @@
+/*
+Theme Name: Block-Based Bosco
+Version: 1.0
+Requires PHP: 7.0
+Requires at least: 5.5
+Tested up to: 5.5.3
+Description: Experimental Full Site Editing Theme
+Author: Frank Klein
+Author URI: https://wpdevelopment.courses/
+Theme URI: https://wpdevelopment.courses/articles/introducing-block-based-bosco/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, featured-images
+Text Domain: block-based-bosco
+*/
+
+/*
+Global
+ */
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+/* Screen Reader Text */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  word-break: normal;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  -webkit-clip-path: none;
+  clip-path: none;
+  color: #21759b;
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  height: auto;
+  right: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+}
+
+/*
+Layout
+ */
+
+/* These are the wrappers for all FSE blocks, the first on the frontend, the second in the Site Editor. */
+.wp-site-blocks,
+.editor-styles-wrapper .edit-site-block-editor__block-list {
+  max-width: calc(1px * var(--wp--custom--content--full-width));
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 5px solid #cc0000;
+  border-top: 5px solid #cc0000;
+}
+
+/* Typography */
+:root {
+  font-size: var(--wp--custom--typography--root-size);
+  font-family: Lora, Georgia, serif;
+  line-height: var(--wp--custom--typography--line-height);
+}
+
+/* Colors */
+
+/*
+Template Parts
+ */
+
+/* Header */
+.site-header {
+  border-bottom: 1px solid #ccc;
+  padding: 2.618em 0;
+}
+
+.wp-block-site-title {
+  margin: 0;
+  text-align: center;
+}
+
+.wp-block-site-title a {
+  border: none;
+  text-decoration: none;
+}
+
+.wp-block-site-tagline {
+  font-size: 1.618rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+/* == Navigation === */
+
+/* By default the navigation template part has a top and bottom border. */
+.wp-block-navigation {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+/* If the navigation template part comes immediately after the header, we do not need the top border. */
+.site-header + .wp-block-navigation {
+  border-top: 0;
+}
+
+/* Generic styles */
+
+/* All links. */
+
+.wp-block-navigation-link__content {
+  color: #222;
+  font-weight: bold;
+  padding: 1.159rem 1.618rem;
+  text-decoration: none;
+  word-wrap: break-word;
+}
+
+.wp-block-navigation-link__content:hover {
+  color: #c00;
+}
+
+/* First level */
+.wp-block-navigation > .wp-block-navigation__container > li {
+  margin: 0 0.89rem;
+}
+
+.wp-block-navigation > .wp-block-navigation__container > li > a {
+  text-transform: uppercase;
+}
+
+.wp-block-navigation-link__submenu-icon {
+  color: #ccc;
+}
+
+/* Second level and more */
+.wp-block-navigation ul ul li:first-child {
+  border: none;
+}
+.wp-block-navigation ul ul li {
+  margin: 0;
+  border-top: 1px solid #ccc;
+}
+
+/*
+Footer
+ */
+
+.site-footer {
+  border-top: 1px solid #ccc;
+  color: #757575;
+  margin-top: 3.75rem;
+  padding: 1.159rem 1.618rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+/*--------------------------------------------------------------
+Content
+--------------------------------------------------------------*/
+
+/* The wrapper for all posts and pages */
+.entry {
+  margin-top: 7.6875rem;
+}
+
+/* == Post Title ==== */
+
+.wp-block-post-title {
+  /* Use `calc()` to number convert to pixels. */
+  font-size: 2.4rem;
+  max-width: calc(1px * var(--wp--custom--content--wide-width));
+  margin-bottom: 2.618rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.wp-block-post-title a {
+  color: #222;
+  text-decoration: none;
+}
+
+.wp-block-post-title  a:hover {
+  color: #c00;
+}
+
+/* == Featured Image ==== */
+
+.entry-featured-image {
+  /* Use `calc()` to number convert to pixels. */
+  max-width: calc(1px * var(--wp--custom--content--wide-width));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* The featured image block wraps the image in a paragraph without a class. */
+/* Center this paragraph so that smaller featured images are aligned in the middle. */
+.entry-featured-image p {
+  text-align: center;
+}
+
+.entry-content {
+  /* Use `calc()` to number convert to pixels. */
+  max-width: calc(1px * var(--wp--custom--content--normal-width));
+  margin-left: auto;
+  margin-right: auto;
+  /* Fix aligned images from breaking out of the container */
+  clear: both;
+  overflow: hidden;
+}
+
+
+.entry-content h1 {
+  margin: 0 0 1.811rem 0;
+}
+
+.entry-content h2 {
+  margin: 0 0 1.618rem 0;
+}
+
+/* === Entry Footer == */
+
+.entry-footer {
+  border-top: 1px solid #ccc;
+  color:  #757575;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.811rem;
+  max-width: calc(1px * var(--wp--custom--content--normal-width));
+  padding-top: 1.12rem;
+}
+
+.entry-footer .wp-block-group__inner-container {
+  display: flex;
+}
+
+/* Gutenberg doesn't offer <span> tags, so the meta is in paragraphs. We need to override these styles */
+.entry-footer p {
+  margin: 0;
+}
+
+/* Put a spacer between the "Posted on" text, and the post date. */
+.wp-block-post-date {
+  margin-left: .3125rem;
+}
+
+/* The post author byline and name are wrapped in paragraph tags, but the design wants them on a single line. */
+.wp-block-post-author__content {
+  display: flex;
+}
+
+.wp-block-post-author__content::before {
+  content: " \2022\ ";
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+/* Override the default Post Author block styles. */
+.wp-block-post-author__byline {
+  width: auto;
+  font-size: inherit;
+}
+
+/* Override the default Post Author block styles. The selector needs to have a higher specificity then the
+   Gutenberg provided styles, to override the margin. */
+p.wp-block-post-author__name {
+  font-weight: inherit;
+  /* Put a spacer between the "By" text, and the author name. */
+  margin-left: .3125rem;
+}
+
+/*
+Templates
+ */
+
+/* == Archives === */
+.posts-navigation {
+  font-size: 1.159rem;
+  margin-top: 4.1875rem;
+}
+
+.posts-navigation .wp-block-group__inner-container {
+  display: flex;
+}
+
+.posts-navigation .wp-block-group__inner-container div {
+  flex-grow: 1;
+}
+
+.posts-navigation .wp-block-group__inner-container div:nth-child(2) {
+  text-align: right;
+}
+
+/*
+These classes are only here to pass the Theme Check on WordPress.org.
+*/
+.bypostauthor,
+.gallery-caption,
+.sticky,
+.wp-caption,
+.wp-caption-text {}
