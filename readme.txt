@@ -23,5 +23,5 @@ Development for this theme is done on GitHub: https://github.com/WP-Development-
 * Release date: 5 November 2020
 
 == Resources ==
-
+* Normalize.css: https://github.com/necolas/normalize.css licensed under MIT.
 * RequireGutenberg class: https://github.com/WordPress/theme-experiments/blob/master/require-gutenberg/require-gutenberg.php licensed under GPL v2.0
