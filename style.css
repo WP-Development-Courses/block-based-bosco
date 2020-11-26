@@ -105,7 +105,9 @@ Template Parts
   padding: 2.618em 0;
 }
 
+.editor-styles-wrapper h1.wp-block-site-title,
 .wp-block-site-title {
+  color: #c00;
   margin: 0;
   text-align: center;
 }
@@ -115,6 +117,7 @@ Template Parts
   text-decoration: none;
 }
 
+.editor-styles-wrapper p.wp-block-site-tagline,
 .wp-block-site-tagline {
   font-size: 1.618rem;
   font-weight: bold;
@@ -184,6 +187,10 @@ Footer
   padding: 1.159rem 1.618rem;
 }
 
+.site-footer .block-editor-block-list__block {
+  margin: 0;
+}
+
 .site-footer p {
   margin: 0;
 }
@@ -233,6 +240,7 @@ Content
   text-align: center;
 }
 
+.wp-block-post-content.wp-block,
 .entry-content {
   /* Use `calc()` to number convert to pixels. */
   max-width: calc(1px * var(--wp--custom--content--normal-width));
@@ -264,18 +272,28 @@ Content
   padding-top: 1.12rem;
 }
 
+.entry-footer.wp-block {
+  max-width: calc(1px * var(--wp--custom--content--normal-width));
+}
+
 .entry-footer .wp-block-group__inner-container {
   display: flex;
 }
 
 /* Gutenberg doesn't offer <span> tags, so the meta is in paragraphs. We need to override these styles */
+.editor-styles-wrapper .entry-footer p,
 .entry-footer p {
   margin: 0;
 }
 
 /* Put a spacer between the "Posted on" text, and the post date. */
-.wp-block-post-date {
-  margin-left: .3125rem;
+.entry-footer .wp-block-post-date {
+  margin: 0 0 0 .3125rem;
+}
+
+/* Remove the extra space around the post author block */
+.editor-styles-wrapper .entry-footer .wp-block-post-author {
+  margin: 0;
 }
 
 /* The post author byline and name are wrapped in paragraph tags, but the design wants them on a single line. */
@@ -290,6 +308,7 @@ Content
 }
 
 /* Override the default Post Author block styles. */
+.editor-styles-wrapper .wp-block-post-author .wp-block-post-author__byline,
 .wp-block-post-author__byline {
   width: auto;
   font-size: inherit;
@@ -297,6 +316,7 @@ Content
 
 /* Override the default Post Author block styles. The selector needs to have a higher specificity then the
    Gutenberg provided styles, to override the margin. */
+.editor-styles-wrapper p.wp-block-post-author__name,
 p.wp-block-post-author__name {
   font-weight: inherit;
   /* Put a spacer between the "By" text, and the author name. */
@@ -323,6 +343,25 @@ Templates
 
 .posts-navigation .wp-block-group__inner-container div:nth-child(2) {
   text-align: right;
+}
+
+/* Override Query pagination block styles. */
+.edit-site-block-editor__editor-styles-wrapper .components-button.has-icon
+ svg {
+  display: none;
+}
+
+.components-button-group .components-button.is-primary,
+.components-button-group .components-button.is-primary:hover:not(:disabled) {
+  background: none;
+  box-shadow: none;
+  color: var(--wp--style--color--link, #00e);
+  font-family: inherit;
+  font-size: 1.159rem;
+  outline: none;
+  text-decoration: underline;
+  text-shadow: none;
+  white-space: nowrap;
 }
 
 /*

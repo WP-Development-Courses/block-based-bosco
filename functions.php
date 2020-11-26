@@ -5,33 +5,33 @@
 
 require_once __DIR__ . '/inc/class-require-gutenberg.php';
 
-function bbb_add_theme_supports() {
+function block_based_bosco_add_theme_supports() {
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'post-thumbnails' );
 }
-add_action( 'after_setup_theme', 'bbb_add_theme_supports' );
+add_action( 'after_setup_theme', 'block_based_bosco_add_theme_supports' );
 
-function bbb_enqueue_styles() {
+function block_based_bosco_enqueue_styles() {
 	wp_enqueue_style(
-		'bbb-normalize',
+		'block-based-bosco-normalize',
 		get_stylesheet_directory_uri() . '/css/normalize.css',
 		[],
 		'8.0.1'
 	);
 
 	wp_enqueue_style(
-		'bbb-style',
+		'block-based-bosco-style',
 		get_stylesheet_uri(),
 		[
-			'bbb-normalize'
+			'block-based-bosco-normalize'
 		],
 		wp_get_theme()->get( 'Version' )
 	);
 
-	wp_enqueue_style( 'bbb-lora', bbb_font_url(), array(), null );
+	wp_enqueue_style( 'block-based-bosco-lora', block_based_bosco_font_url(), array(), null );
 }
-add_action( 'wp_enqueue_scripts', 'bbb_enqueue_styles' );
-add_action( 'enqueue_block_editor_assets', 'bbb_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'block_based_bosco_enqueue_styles' );
+add_action( 'enqueue_block_editor_assets', 'block_based_bosco_enqueue_styles' );
 
 /**
  * Returns the Google font stylesheet URL, if available.
@@ -41,7 +41,7 @@ add_action( 'enqueue_block_editor_assets', 'bbb_enqueue_styles' );
  *
  * Returns the font stylesheet URL or empty string if disabled.
  */
-function bbb_font_url() {
+function block_based_bosco_font_url() {
 	$font_url = '';
 	/*
 	 * Translators: If there are characters in your language that are not supported
@@ -57,7 +57,7 @@ function bbb_font_url() {
 /**
  * These functions is only here to pass the Theme Check on WordPress.org.
  */
-function bbb_theme_check_dummy_calls() {
+function block_based_bosco_theme_check_dummy_calls() {
 	add_theme_support( 'title-tag' );
 	comment_form();
 	comments_template();
