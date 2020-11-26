@@ -22,6 +22,14 @@ Development for this theme is done on GitHub: https://github.com/WP-Development-
 
 * Release date: 5 November 2020
 
+= 1.1 =
+
+* Release date: 26 November 2020
+* Addressed theme review feedback:
+   * Updated screenshot.
+   * Added licensing information for `normalize.css`.
+   * Aligned function prefix with the theme slug, to be more unique.
+
 == Resources ==
 * Normalize.css: https://github.com/necolas/normalize.css licensed under MIT.
 * RequireGutenberg class: https://github.com/WordPress/theme-experiments/blob/master/require-gutenberg/require-gutenberg.php licensed under GPL v2.0
