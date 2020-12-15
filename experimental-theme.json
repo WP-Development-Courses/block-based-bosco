@@ -43,5 +43,12 @@
           "lineHeight": "1.3"
         }
       }
+    },
+    "core/site-tagline": {
+      "styles": {
+        "typography": {
+          "fontSize": "1.618rem"
+        }
+      }
     }
   }
