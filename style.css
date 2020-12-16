@@ -86,13 +86,6 @@ Layout
   border-top: 5px solid #cc0000;
 }
 
-/* Typography */
-:root {
-  font-size: var(--wp--custom--typography--root-size);
-  font-family: Lora, Georgia, serif;
-  line-height: var(--wp--custom--typography--line-height);
-}
-
 /* Colors */
 
 /*

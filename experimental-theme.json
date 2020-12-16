@@ -7,6 +7,7 @@
         "link": "#c00"
       },
       "typography": {
+        "fontFamily": "Lora, Georgia, serif",
         "fontSize": "1rem",
         "lineHeight": "1.45"
       }
