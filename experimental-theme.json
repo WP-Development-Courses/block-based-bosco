@@ -28,9 +28,9 @@
     },
     "styles": {
       "color": {
-        "background": "#fff",
-        "text": "#222",
-        "link": "#c00"
+        "background": "var(--wp--preset--color--white)",
+        "text": "var(--wp--preset--color--black)",
+        "link": "var(--wp--preset--color--red)"
       },
       "typography": {
         "fontFamily": "Lora, Georgia, serif",

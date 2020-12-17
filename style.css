@@ -438,8 +438,8 @@ Layout
   max-width: calc(1px * var(--wp--custom--content--full-width));
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 5px solid #cc0000;
-  border-top: 5px solid #cc0000;
+  border-bottom: 5px solid var(--wp--preset--color--red);
+  border-top: 5px solid var(--wp--preset--color--red);
 }
 
 /* Colors */
@@ -456,7 +456,7 @@ Template Parts
 
 .editor-styles-wrapper h1.wp-block-site-title,
 .wp-block-site-title {
-  color: #c00;
+  color: var(--wp--preset--color--red);
   margin: 0;
   text-align: center;
 }
@@ -492,7 +492,7 @@ Template Parts
 /* All links. */
 
 .wp-block-navigation-link__content {
-  color: #222;
+  color: var(--wp--preset--color--black);
   font-weight: bold;
   padding: 1.159rem 1.618rem;
   text-decoration: none;
@@ -500,7 +500,7 @@ Template Parts
 }
 
 .wp-block-navigation-link__content:hover {
-  color: #c00;
+  color: var(--wp--preset--color--red);
 }
 
 /* First level */
@@ -566,12 +566,12 @@ Content
 }
 
 .wp-block-post-title a {
-  color: #222;
+  color: var(--wp--preset--color--black);
   text-decoration: none;
 }
 
 .wp-block-post-title  a:hover {
-  color: #c00;
+  color: var(--wp--preset--color--red);
 }
 
 /* == Featured Image ==== */
