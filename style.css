@@ -711,13 +711,12 @@ Templates
 }
 
 /* Override Query pagination block styles. */
-.edit-site-block-editor__editor-styles-wrapper .components-button.has-icon
- svg {
+.wp-block-query-pagination svg {
   display: none;
 }
 
-.components-button-group .components-button.is-primary,
-.components-button-group .components-button.is-primary:hover:not(:disabled) {
+.wp-block-query-pagination .components-button-group .components-button.is-primary,
+.wp-block-query-pagination .components-button-group .components-button.is-primary:hover:not(:disabled) {
   background: none;
   box-shadow: none;
   color: var(--wp--style--color--link, #00e);
