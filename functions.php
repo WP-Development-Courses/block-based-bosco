@@ -13,18 +13,9 @@ add_action( 'after_setup_theme', 'block_based_bosco_add_theme_supports' );
 
 function block_based_bosco_enqueue_styles() {
 	wp_enqueue_style(
-		'block-based-bosco-normalize',
-		get_stylesheet_directory_uri() . '/css/normalize.css',
-		[],
-		'8.0.1'
-	);
-
-	wp_enqueue_style(
 		'block-based-bosco-style',
 		get_stylesheet_uri(),
-		[
-			'block-based-bosco-normalize'
-		],
+		[],
 		wp_get_theme()->get( 'Version' )
 	);
 
