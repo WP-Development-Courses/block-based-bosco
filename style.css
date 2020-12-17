@@ -457,7 +457,6 @@ Template Parts
 .editor-styles-wrapper h1.wp-block-site-title,
 .wp-block-site-title {
   margin: 0;
-  text-align: center;
 }
 
 .wp-block-site-title a {
@@ -466,10 +465,8 @@ Template Parts
 
 .editor-styles-wrapper p.wp-block-site-tagline,
 .wp-block-site-tagline {
-  font-size: 1.618rem;
   font-weight: bold;
   margin: 0;
-  text-align: center;
 }
 
 /* == Navigation === */

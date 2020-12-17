@@ -51,6 +51,13 @@
       }
     }
   },
+  "core/site-tagline": {
+    "styles": {
+      "typography": {
+        "fontSize": "1.618rem"
+      }
+    }
+  },
   "core/heading/h2": {
     "styles": {
       "typography": {
