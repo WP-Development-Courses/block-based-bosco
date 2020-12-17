@@ -1,5 +1,31 @@
 {
   "global": {
+    "settings": {
+      "color": {
+        "palette": [
+          {
+            "slug": "black",
+            "color": "#222"
+          },
+          {
+            "slug": "white",
+            "color": "#fff"
+          },
+          {
+            "slug": "red",
+            "color": "#c00"
+          }
+        ],
+        "link": true
+      },
+      "custom": {
+        "content": {
+          "normalWidth": 520,
+          "wideWidth": 750,
+          "fullWidth": 840
+        }
+      }
+    },
     "styles": {
       "color": {
         "background": "#fff",
@@ -10,18 +36,6 @@
         "fontFamily": "Lora, Georgia, serif",
         "fontSize": "1rem",
         "lineHeight": "1.45"
-      }
-    },
-    "settings": {
-      "color": {
-        "link": true
-      },
-      "custom": {
-        "content": {
-          "normalWidth": 520,
-          "wideWidth": 750,
-          "fullWidth": 840
-        }
       }
     }
   },
