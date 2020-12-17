@@ -600,6 +600,7 @@ Content
   overflow: hidden;
 }
 
+/* == Featured Content ==== */
 
 .entry-content h1 {
   margin: 0 0 1.811rem 0;
@@ -607,6 +608,26 @@ Content
 
 .entry-content h2 {
   margin: 0 0 1.618rem 0;
+}
+
+.entry-content h3 {
+  margin: 0 0 1.159rem 0;
+}
+
+.entry-content h4 {
+  margin: 0 0 1rem 0;
+}
+
+.entry-content h5 {
+  font-size: 1rem;
+  font-style: italic;
+  margin: 0 0 1rem 0;
+}
+
+.entry-content h6 {
+  font-style: italic;
+  font-weight: 400;
+  margin: 0 0 1rem 0;
 }
 
 /* === Entry Footer == */
