@@ -450,7 +450,7 @@ Template Parts
 
 /* Header */
 .site-header {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--wp--preset--color--light-grey);
   padding: 2.618em 0;
 }
 
@@ -478,8 +478,8 @@ Template Parts
 
 /* By default the navigation template part has a top and bottom border. */
 .wp-block-navigation {
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border-top: 1px solid var(--wp--preset--color--light-grey);
+  border-bottom: 1px solid var(--wp--preset--color--light-grey);
 }
 
 /* If the navigation template part comes immediately after the header, we do not need the top border. */
@@ -513,7 +513,7 @@ Template Parts
 }
 
 .wp-block-navigation-link__submenu-icon {
-  color: #ccc;
+  color: var(--wp--preset--color--light-grey);
 }
 
 /* Second level and more */
@@ -522,7 +522,7 @@ Template Parts
 }
 .wp-block-navigation ul ul li {
   margin: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--wp--preset--color--light-grey);
 }
 
 /*
@@ -530,7 +530,7 @@ Footer
  */
 
 .site-footer {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--wp--preset--color--light-grey);
   color: #757575;
   margin-top: 3.75rem;
   padding: 1.159rem 1.618rem;
@@ -633,7 +633,7 @@ Content
 /* === Entry Footer == */
 
 .entry-footer {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--wp--preset--color--light-grey);
   color:  #757575;
   margin-left: auto;
   margin-right: auto;

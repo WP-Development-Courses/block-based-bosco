@@ -12,6 +12,10 @@
             "color": "#fff"
           },
           {
+            "slug": "light-grey",
+            "color": "#ccc"
+          },
+          {
             "slug": "red",
             "color": "#c00"
           }
