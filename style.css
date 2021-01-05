@@ -574,8 +574,6 @@ Content
 .entry-featured-image {
   /* Use `calc()` to number convert to pixels. */
   max-width: calc(1px * var(--wp--custom--content--wide-width));
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* The featured image block wraps the image in a paragraph without a class. */
