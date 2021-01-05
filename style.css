@@ -526,7 +526,7 @@ Footer
 
 .site-footer {
   border-top: 1px solid var(--wp--preset--color--light-grey);
-  color: #757575;
+  color: var(--wp--preset--color--dark-grey);
   margin-top: 3.75rem;
   padding: 1.159rem 1.618rem;
 }
@@ -621,7 +621,7 @@ Content
 
 .entry-footer {
   border-top: 1px solid var(--wp--preset--color--light-grey);
-  color:  #757575;
+  color:  var(--wp--preset--color--dark-grey);
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.811rem;
