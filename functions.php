@@ -23,6 +23,16 @@ add_action( 'wp_enqueue_scripts', 'block_based_bosco_enqueue_styles' );
 add_action( 'enqueue_block_editor_assets', 'block_based_bosco_enqueue_styles' );
 
 /**
+ * Remove some of the default Gutenberg block styles.
+ *
+ * This prevents having to overload these in the theme's stylesheet.
+ */
+function block_based_bosco_deregister_core_block_styles() {
+	wp_deregister_style( 'wp-block-post-author' );
+}
+add_action( 'wp_enqueue_scripts', 'block_based_bosco_deregister_core_block_styles' );
+
+/**
  * Returns the Google font stylesheet URL, if available.
  *
  * The use of Lora by default is localized. For languages that use characters

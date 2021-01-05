@@ -663,25 +663,17 @@ Content
   display: flex;
 }
 
+/* Add the dot separator before the post author. */
 .wp-block-post-author__content::before {
   content: " \2022\ ";
   margin-left: .5rem;
   margin-right: .5rem;
 }
 
-/* Override the default Post Author block styles. */
-.editor-styles-wrapper .wp-block-post-author .wp-block-post-author__byline,
-.wp-block-post-author__byline {
-  width: auto;
-  font-size: inherit;
-}
-
-/* Override the default Post Author block styles. The selector needs to have a higher specificity then the
-   Gutenberg provided styles, to override the margin. */
+/* Put a spacer between the "By" text, and the author name. */
 .editor-styles-wrapper p.wp-block-post-author__name,
 p.wp-block-post-author__name {
-  font-weight: inherit;
-  /* Put a spacer between the "By" text, and the author name. */
+
   margin-left: .3125rem;
 }
 
