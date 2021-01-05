@@ -14,6 +14,362 @@ Tags: blog, featured-images
 Text Domain: block-based-bosco
 */
 
+/* ====================================================================== */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* ====================================================================== */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/* ====================================================================== */
+/* Bosco Theme Styles                                                     */
+/* ====================================================================== */
+
 /*
 Global
  */
@@ -82,15 +438,8 @@ Layout
   max-width: calc(1px * var(--wp--custom--content--full-width));
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 5px solid #cc0000;
-  border-top: 5px solid #cc0000;
-}
-
-/* Typography */
-:root {
-  font-size: var(--wp--custom--typography--root-size);
-  font-family: Lora, Georgia, serif;
-  line-height: var(--wp--custom--typography--line-height);
+  border-bottom: 5px solid var(--wp--preset--color--red);
+  border-top: 5px solid var(--wp--preset--color--red);
 }
 
 /* Colors */
@@ -101,36 +450,31 @@ Template Parts
 
 /* Header */
 .site-header {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--wp--preset--color--light-grey);
   padding: 2.618em 0;
 }
 
 .editor-styles-wrapper h1.wp-block-site-title,
 .wp-block-site-title {
-  color: #c00;
   margin: 0;
-  text-align: center;
 }
 
 .wp-block-site-title a {
-  border: none;
   text-decoration: none;
 }
 
 .editor-styles-wrapper p.wp-block-site-tagline,
 .wp-block-site-tagline {
-  font-size: 1.618rem;
   font-weight: bold;
   margin: 0;
-  text-align: center;
 }
 
 /* == Navigation === */
 
 /* By default the navigation template part has a top and bottom border. */
 .wp-block-navigation {
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border-top: 1px solid var(--wp--preset--color--light-grey);
+  border-bottom: 1px solid var(--wp--preset--color--light-grey);
 }
 
 /* If the navigation template part comes immediately after the header, we do not need the top border. */
@@ -143,7 +487,7 @@ Template Parts
 /* All links. */
 
 .wp-block-navigation-link__content {
-  color: #222;
+  color: var(--wp--preset--color--black);
   font-weight: bold;
   padding: 1.159rem 1.618rem;
   text-decoration: none;
@@ -151,7 +495,7 @@ Template Parts
 }
 
 .wp-block-navigation-link__content:hover {
-  color: #c00;
+  color: var(--wp--preset--color--red);
 }
 
 /* First level */
@@ -164,7 +508,7 @@ Template Parts
 }
 
 .wp-block-navigation-link__submenu-icon {
-  color: #ccc;
+  color: var(--wp--preset--color--light-grey);
 }
 
 /* Second level and more */
@@ -173,7 +517,7 @@ Template Parts
 }
 .wp-block-navigation ul ul li {
   margin: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--wp--preset--color--light-grey);
 }
 
 /*
@@ -181,8 +525,8 @@ Footer
  */
 
 .site-footer {
-  border-top: 1px solid #ccc;
-  color: #757575;
+  border-top: 1px solid var(--wp--preset--color--light-grey);
+  color: var(--wp--preset--color--dark-grey);
   margin-top: 3.75rem;
   padding: 1.159rem 1.618rem;
 }
@@ -208,21 +552,19 @@ Content
 
 .wp-block-post-title {
   /* Use `calc()` to number convert to pixels. */
-  font-size: 2.4rem;
   max-width: calc(1px * var(--wp--custom--content--wide-width));
   margin-bottom: 2.618rem;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
 }
 
 .wp-block-post-title a {
-  color: #222;
+  color: var(--wp--preset--color--black);
   text-decoration: none;
 }
 
 .wp-block-post-title  a:hover {
-  color: #c00;
+  color: var(--wp--preset--color--red);
 }
 
 /* == Featured Image ==== */
@@ -232,12 +574,6 @@ Content
   max-width: calc(1px * var(--wp--custom--content--wide-width));
   margin-left: auto;
   margin-right: auto;
-}
-
-/* The featured image block wraps the image in a paragraph without a class. */
-/* Center this paragraph so that smaller featured images are aligned in the middle. */
-.entry-featured-image p {
-  text-align: center;
 }
 
 .wp-block-post-content.wp-block,
@@ -251,6 +587,7 @@ Content
   overflow: hidden;
 }
 
+/* == Featured Content ==== */
 
 .entry-content h1 {
   margin: 0 0 1.811rem 0;
@@ -260,11 +597,31 @@ Content
   margin: 0 0 1.618rem 0;
 }
 
+.entry-content h3 {
+  margin: 0 0 1.159rem 0;
+}
+
+.entry-content h4 {
+  margin: 0 0 1rem 0;
+}
+
+.entry-content h5 {
+  font-size: 1rem;
+  font-style: italic;
+  margin: 0 0 1rem 0;
+}
+
+.entry-content h6 {
+  font-style: italic;
+  font-weight: 400;
+  margin: 0 0 1rem 0;
+}
+
 /* === Entry Footer == */
 
 .entry-footer {
-  border-top: 1px solid #ccc;
-  color:  #757575;
+  border-top: 1px solid var(--wp--preset--color--light-grey);
+  color:  var(--wp--preset--color--dark-grey);
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.811rem;
@@ -301,25 +658,16 @@ Content
   display: flex;
 }
 
+/* Add the dot separator before the post author. */
 .wp-block-post-author__content::before {
   content: " \2022\ ";
   margin-left: .5rem;
   margin-right: .5rem;
 }
 
-/* Override the default Post Author block styles. */
-.editor-styles-wrapper .wp-block-post-author .wp-block-post-author__byline,
-.wp-block-post-author__byline {
-  width: auto;
-  font-size: inherit;
-}
-
-/* Override the default Post Author block styles. The selector needs to have a higher specificity then the
-   Gutenberg provided styles, to override the margin. */
+/* Put a spacer between the "By" text, and the author name. */
 .editor-styles-wrapper p.wp-block-post-author__name,
 p.wp-block-post-author__name {
-  font-weight: inherit;
-  /* Put a spacer between the "By" text, and the author name. */
   margin-left: .3125rem;
 }
 
@@ -343,25 +691,6 @@ Templates
 
 .posts-navigation .wp-block-group__inner-container div:nth-child(2) {
   text-align: right;
-}
-
-/* Override Query pagination block styles. */
-.edit-site-block-editor__editor-styles-wrapper .components-button.has-icon
- svg {
-  display: none;
-}
-
-.components-button-group .components-button.is-primary,
-.components-button-group .components-button.is-primary:hover:not(:disabled) {
-  background: none;
-  box-shadow: none;
-  color: var(--wp--style--color--link, #00e);
-  font-family: inherit;
-  font-size: 1.159rem;
-  outline: none;
-  text-decoration: underline;
-  text-shadow: none;
-  white-space: nowrap;
 }
 
 /*
