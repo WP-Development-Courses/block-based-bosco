@@ -552,7 +552,6 @@ Content
 
 .wp-block-post-title {
   /* Use `calc()` to number convert to pixels. */
-  font-size: 2.4rem;
   max-width: calc(1px * var(--wp--custom--content--wide-width));
   margin-bottom: 2.618rem;
   margin-left: auto;

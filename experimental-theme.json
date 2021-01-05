@@ -97,5 +97,12 @@
         "lineHeight": "1.3"
       }
     }
+  },
+  "core/post-title/h2": {
+    "styles": {
+      "typography": {
+        "fontSize": "2.4rem"
+      }
+    }
   }
 }
