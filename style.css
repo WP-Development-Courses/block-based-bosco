@@ -699,24 +699,6 @@ Templates
   text-align: right;
 }
 
-/* Override Query pagination block styles. */
-.wp-block-query-pagination svg {
-  display: none;
-}
-
-.wp-block-query-pagination .components-button-group .components-button.is-primary,
-.wp-block-query-pagination .components-button-group .components-button.is-primary:hover:not(:disabled) {
-  background: none;
-  box-shadow: none;
-  color: var(--wp--style--color--link, #00e);
-  font-family: inherit;
-  font-size: 1.159rem;
-  outline: none;
-  text-decoration: underline;
-  text-shadow: none;
-  white-space: nowrap;
-}
-
 /*
 These classes are only here to pass the Theme Check on WordPress.org.
 */
