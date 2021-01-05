@@ -673,7 +673,6 @@ Content
 /* Put a spacer between the "By" text, and the author name. */
 .editor-styles-wrapper p.wp-block-post-author__name,
 p.wp-block-post-author__name {
-
   margin-left: .3125rem;
 }
 
