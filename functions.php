@@ -3,8 +3,6 @@
  * Theme setup.
  */
 
-require_once __DIR__ . '/inc/class-require-gutenberg.php';
-
 function block_based_bosco_add_theme_supports() {
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'post-thumbnails' );
