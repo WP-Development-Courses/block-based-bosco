@@ -2,8 +2,8 @@
 Theme Name: Block-Based Bosco
 Version: 1.1
 Requires PHP: 7.0
-Requires at least: 5.5
-Tested up to: 5.5.3
+Requires at least: 5.6
+Tested up to: 5.6
 Description: Experimental Full Site Editing Theme
 Author: Frank Klein
 Author URI: https://wpdevelopment.courses/
@@ -691,6 +691,130 @@ Templates
 
 .posts-navigation .wp-block-group__inner-container div:nth-child(2) {
   text-align: right;
+}
+
+/*
+Comments - Adapted from existing Bosco theme.
+ */
+
+.comments-area {
+  border-top: 4px double #ccc;
+  margin: 1.875em auto 0 auto;
+  max-width: 750px;
+  padding-top: 1.875em;
+}
+.comment-navigation {
+  font-size: 1.159rem;
+  margin-bottom: 1.618rem;
+}
+.comment-list,
+.comment-list .children {
+  list-style: none;
+}
+.comment-list {
+  margin-left: 0;
+  padding-inline-start: 0;
+}
+.comment,
+.pingback,
+.trackback {
+  border-top: 1px solid #ccc;
+}
+.comment-body {
+  padding: 1.618rem 0;
+}
+.comment-meta {
+  margin: 0 0 1.875em;
+  overflow: hidden;
+  position: relative;
+}
+.avatar {
+  float: left;
+  padding: 0;
+  line-height: 0;
+}
+.comment-meta .fn {
+  display: block;
+  font-style: normal;
+  margin-left: 4.909rem;
+}
+.says {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+}
+.comment-metadata {
+  display: block;
+  font-size: 0.716rem;
+  margin-left: 4.909rem;
+}
+.pingback .comment-meta .fn,
+.trackback .comment-meta .fn,
+.pingback .comment-metadata,
+.trackback .comment-metadata {
+  margin-left: 0;
+}
+.comment-content a {
+  word-wrap: break-word;
+}
+.reply {
+  margin-top: 1.618rem;
+}
+.comment-awaiting-moderation {
+  background-color: #c00;
+  color: #fff;
+  font-size: 0.716rem;
+  margin-left: 4.909rem;
+  text-align: center;
+}
+
+/* Comment Form */
+.comment-form [for="author"],
+.comment-form [for="email"],
+.comment-form [for="url"],
+.comment-form [for="comment"] {
+  float: left;
+  line-height: 1;
+  padding: 0.428em 0;
+  width: 120px;
+}
+.comment-form textarea {
+  width: 610px;
+}
+.form-allowed-tags {
+  color: #757575;
+  font-size: 0.875rem;
+  margin-left: 120px;
+}
+.form-allowed-tags code {
+  font-size: 0.75rem;
+}
+.form-submit {
+  text-align: right;
+}
+.wp-block-post-comments-form {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.wp-block-post-comments-form textarea {
+  border: 1px solid #757575;
+  overflow: auto;
+  padding: 0.428em;
+  vertical-align: top;
+}
+
+.wp-block-post-comments-form .form-submit input[type="submit"] {
+  background-color: #c00;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0.918em 1em;
+  text-transform: uppercase;
+  -webkit-appearance: button;
 }
 
 /*
