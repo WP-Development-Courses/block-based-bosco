@@ -18,9 +18,17 @@ Development for this theme is done on GitHub: https://github.com/WP-Development-
 
 == Changelog ==
 
-= 1.0 =
+= 1.2 =
 
-* Release date: 5 November 2020
+* Release date: 18 January 2021
+* Tested with Gutenberg 9.7.4.
+* Update theme tags to mark the theme ass Full-Site Editing compatible.
+* Use block attributes to align blocks instead of CSS.
+* Implement Global Styles for colors, typography, and block settings.
+* Update Query Block settings in `index.html` to inherit the Main Query.
+* Clean up and adjust CSS to work with the Global Styles.
+* Remove `RequireGutenberg` class in favor of the Gutenberg admin notice.
+* Added comments support to single posts and pages.
 
 = 1.1 =
 
@@ -31,16 +39,9 @@ Development for this theme is done on GitHub: https://github.com/WP-Development-
    * Aligned function prefix with the theme slug, to be more unique.
    * Updated editor styles for Gutenberg 9.4.
 
-= 1.2 =
+= 1.0 =
 
-* Release date: 5 January 2021
-* Update theme tags to mark the theme ass Full-Site Editing compatible.
-* Use block attributes to align blocks instead of CSS.
-* Implement Global Styles for colors, typography, and block settings.
-* Update Query Block settings in `index.html` to inherit the Main Query.
-* Clean up and adjust CSS to work with the Global Styles.
-* Remove `RequireGutenberg` class in favor of the Gutenberg admin notice.
-* Tested with Gutenberg 9.6.0.
+* Release date: 5 November 2020
 
 == Resources ==
 * Normalize.css: https://github.com/necolas/normalize.css licensed under MIT.
