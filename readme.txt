@@ -2,13 +2,13 @@
 
 Contributors: frank-klein
 Tags: blog, featured-images
-Requires at least: 5.5
-Tested up to: 5.5.3
+Requires at least: 5.6
+Tested up to: 5.6
 Requires PHP: 7.0
 License: GNU General Public License v2.0 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Full-Site Editing experimental theme. Tested with Gutenberg 9.3.0
+Full-Site Editing experimental theme. Tested with Gutenberg 9.6.0
 
 == Description ==
 
@@ -18,9 +18,17 @@ Development for this theme is done on GitHub: https://github.com/WP-Development-
 
 == Changelog ==
 
-= 1.0 =
+= 1.2 =
 
-* Release date: 5 November 2020
+* Release date: 18 January 2021
+* Tested with Gutenberg 9.7.4.
+* Update theme tags to mark the theme ass Full-Site Editing compatible.
+* Use block attributes to align blocks instead of CSS.
+* Implement Global Styles for colors, typography, and block settings.
+* Update Query Block settings in `index.html` to inherit the Main Query.
+* Clean up and adjust CSS to work with the Global Styles.
+* Remove `RequireGutenberg` class in favor of the Gutenberg admin notice.
+* Added comments support to single posts and pages.
 
 = 1.1 =
 
@@ -31,6 +39,9 @@ Development for this theme is done on GitHub: https://github.com/WP-Development-
    * Aligned function prefix with the theme slug, to be more unique.
    * Updated editor styles for Gutenberg 9.4.
 
+= 1.0 =
+
+* Release date: 5 November 2020
+
 == Resources ==
 * Normalize.css: https://github.com/necolas/normalize.css licensed under MIT.
-* RequireGutenberg class: https://github.com/WordPress/theme-experiments/blob/master/require-gutenberg/require-gutenberg.php licensed under GPL v2.0
