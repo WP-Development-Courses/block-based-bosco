@@ -26,11 +26,23 @@ add_action( 'enqueue_block_editor_assets', 'block_based_bosco_enqueue_styles' );
  * Remove some of the default Gutenberg block styles.
  *
  * This prevents having to overload these in the theme's stylesheet.
+ *
+ * @param array  $args       Array of arguments for registering a block type.
+ * @param string $block_type Block type name including namespace.
+ *
+ * @return array Filtered block type arguments.
  */
-function block_based_bosco_deregister_core_block_styles() {
-	wp_deregister_style( 'wp-block-post-author' );
+function block_based_bosco_deregister_core_block_styles( $args, $block_type ) {
+	if ( $block_type !== 'core/post-author' ) {
+		return $args;
+	}
+
+	unset( $args['editor_style'] );
+	unset( $args['style'] );
+
+	return $args;
 }
-add_action( 'wp_enqueue_scripts', 'block_based_bosco_deregister_core_block_styles' );
+add_action( 'register_block_type_args', 'block_based_bosco_deregister_core_block_styles', 10, 2 );
 
 /**
  * Returns the Google font stylesheet URL, if available.
