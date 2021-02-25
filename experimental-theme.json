@@ -1,6 +1,6 @@
 {
-  "global": {
-    "settings": {
+  "settings": {
+    "defaults": {
       "color": {
         "palette": [
           {
@@ -33,8 +33,10 @@
           "fullWidth": 840
         }
       }
-    },
-    "styles": {
+    }
+  },
+  "styles": {
+    "root": {
       "color": {
         "background": "var(--wp--preset--color--white)",
         "text": "var(--wp--preset--color--black)",
@@ -45,65 +47,49 @@
         "fontSize": "1rem",
         "lineHeight": "1.45"
       }
-    }
-  },
-  "core/site-title": {
-    "styles": {
+    },
+    "core/site-title": {
       "typography": {
         "fontSize": "1.811rem",
         "lineHeight": "1.3"
       }
-    }
-  },
-  "core/site-tagline": {
-    "styles": {
+    },
+    "core/site-tagline": {
       "typography": {
         "fontSize": "1.618rem"
       }
-    }
-  },
-  "core/heading/h2": {
-    "styles": {
+    },
+    "core/heading/h2": {
       "typography": {
         "fontSize": "1.618rem",
         "lineHeight": "1.3"
       }
-    }
-  },
-  "core/heading/h3": {
-    "styles": {
+    },
+    "core/heading/h3": {
       "typography": {
         "fontSize": "1.159rem",
         "lineHeight": "1.3"
       }
-    }
-  },
-  "core/heading/h4": {
-    "styles": {
+    },
+    "core/heading/h4": {
       "typography": {
         "fontSize": "1rem",
         "lineHeight": "1.3"
       }
-    }
-  },
-  "core/heading/h5": {
-    "styles": {
+    },
+    "core/heading/h5": {
       "typography": {
         "fontSize": "1rem",
         "lineHeight": "1.3"
       }
-    }
-  },
-  "core/heading/h6": {
-    "styles": {
+    },
+    "core/heading/h6": {
       "typography": {
         "fontSize": "1rem",
         "lineHeight": "1.3"
       }
-    }
-  },
-  "core/post-title/h2": {
-    "styles": {
+    },
+    "core/post-title/h2": {
       "typography": {
         "fontSize": "2.4rem"
       }
