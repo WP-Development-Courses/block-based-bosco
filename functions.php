@@ -64,22 +64,3 @@ function block_based_bosco_font_url() {
 
 	return $font_url;
 }
-
-/**
- * These functions is only here to pass the Theme Check on WordPress.org.
- */
-function block_based_bosco_theme_check_dummy_calls() {
-	add_theme_support( 'title-tag' );
-	comment_form();
-	comments_template();
-	paginate_comments_links();
-	post_class();
-	posts_nav_link();
-	wp_enqueue_script( 'comment-reply' );
-	wp_list_comments();
-	wp_link_pages();
-	the_tags();
-
-	global $content_width;
-	$content_width = 1200;
-}
