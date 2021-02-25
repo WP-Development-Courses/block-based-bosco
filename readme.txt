@@ -18,6 +18,15 @@ Development for this theme is done on GitHub: https://github.com/WP-Development-
 
 == Changelog ==
 
+= 1.3 =
+
+* Release date: 25 February 2021
+* Tested with Gutenberg 10.0.2.
+* Update text alignment attribute with new naming. See https://github.com/WordPress/gutenberg/pull/24077.
+* Update `experimental-theme.json` to the new structure. See https://github.com/WordPress/gutenberg/pull/28110.
+* Refactor removal of Author block frontend styles.
+* Remove unneeded code only present to pass Theme Check. This includes the comments, as well as footer and header template.
+
 = 1.2 =
 
 * Release date: 18 January 2021
