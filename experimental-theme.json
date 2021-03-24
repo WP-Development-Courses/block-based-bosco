@@ -4,24 +4,29 @@
       "color": {
         "palette": [
           {
-            "slug": "black",
-            "color": "#222"
+            "color": "#222",
+            "name": "Black",
+            "slug": "black"
           },
           {
-            "slug": "white",
-            "color": "#fff"
+            "color": "#fff",
+            "name": "White",
+            "slug": "white"
           },
           {
-            "slug": "light-grey",
-            "color": "#ccc"
+            "color": "#ccc",
+            "name": "Light Grey",
+            "slug": "light-grey"
           },
           {
-            "slug": "dark-grey",
-            "color": "#757575"
+            "color": "#757575",
+            "name": "Dark Grey",
+            "slug": "dark-grey"
           },
           {
-            "slug": "red",
-            "color": "#c00"
+            "color": "#c00",
+            "name": "Red",
+            "slug": "red"
           }
         ],
         "link": true
