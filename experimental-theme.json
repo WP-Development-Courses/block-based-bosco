@@ -52,7 +52,9 @@
         "fontSize": "1rem",
         "lineHeight": "1.45"
       }
-    },
+    }
+  },
+  "blocks": {
     "core/site-title": {
       "typography": {
         "fontSize": "1.811rem",
