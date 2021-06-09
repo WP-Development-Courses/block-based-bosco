@@ -31,6 +31,10 @@
         ],
         "link": true
       },
+      "spacing": {
+        "customPadding": true,
+        "units": [ "rem" ]
+      },
       "custom": {
         "content": {
           "normalWidth": 520,
