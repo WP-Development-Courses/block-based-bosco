@@ -1,61 +1,63 @@
 {
+  "version": 1,
   "settings": {
-    "defaults": {
-      "color": {
-        "palette": [
-          {
-            "color": "#222",
-            "name": "Black",
-            "slug": "black"
-          },
-          {
-            "color": "#fff",
-            "name": "White",
-            "slug": "white"
-          },
-          {
-            "color": "#ccc",
-            "name": "Light Grey",
-            "slug": "light-grey"
-          },
-          {
-            "color": "#757575",
-            "name": "Dark Grey",
-            "slug": "dark-grey"
-          },
-          {
-            "color": "#c00",
-            "name": "Red",
-            "slug": "red"
-          }
-        ],
-        "link": true
-      },
-      "spacing": {
-        "customPadding": true,
-        "units": [ "rem" ]
-      },
-      "custom": {
-        "content": {
-          "normalWidth": 520,
-          "wideWidth": 750,
-          "fullWidth": 840
+    "color": {
+      "palette": [
+        {
+          "color": "#222",
+          "name": "Black",
+          "slug": "black"
+        },
+        {
+          "color": "#fff",
+          "name": "White",
+          "slug": "white"
+        },
+        {
+          "color": "#ccc",
+          "name": "Light Grey",
+          "slug": "light-grey"
+        },
+        {
+          "color": "#757575",
+          "name": "Dark Grey",
+          "slug": "dark-grey"
+        },
+        {
+          "color": "#c00",
+          "name": "Red",
+          "slug": "red"
         }
+      ]
+    },
+    "spacing": {
+      "customPadding": true,
+      "units": [ "rem" ]
+    },
+    "custom": {
+      "content": {
+        "normalWidth": 520,
+        "wideWidth": 750,
+        "fullWidth": 840
       }
     }
   },
   "styles": {
-    "root": {
-      "color": {
-        "background": "var(--wp--preset--color--white)",
-        "text": "var(--wp--preset--color--black)",
-        "link": "var(--wp--preset--color--red)"
-      },
-      "typography": {
-        "fontFamily": "Lora, Georgia, serif",
-        "fontSize": "1rem",
-        "lineHeight": "1.45"
+    "color": {
+      "background": "var(--wp--preset--color--white)",
+      "text": "var(--wp--preset--color--black)"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--red)"
+        }
       }
+    },
+    "typography": {
+      "fontFamily": "Lora, Georgia, serif",
+      "fontSize": "1rem",
+      "lineHeight": "1.45"
     }
   },
   "blocks": {
