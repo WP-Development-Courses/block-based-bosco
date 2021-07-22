@@ -490,25 +490,6 @@ Template Parts
 Content
 --------------------------------------------------------------*/
 
-/* == Post Title ==== */
-
-.wp-block-post-title {
-  /* Use `calc()` to number convert to pixels. */
-  max-width: calc(1px * var(--wp--custom--content--wide-width));
-  margin-bottom: 2.618rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.wp-block-post-title a {
-  color: var(--wp--preset--color--black);
-  text-decoration: none;
-}
-
-.wp-block-post-title  a:hover {
-  color: var(--wp--preset--color--red);
-}
-
 /* == Featured Content ==== */
 
 .entry-content h1 {

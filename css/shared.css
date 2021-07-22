@@ -77,4 +77,13 @@
 	margin-left: .3125rem !important;
 }
 
+/* = Blocks == */
 
+.wp-block-post-title a {
+	color: var(--wp--preset--color--black);
+	text-decoration: none;
+}
+
+.wp-block-post-title  a:hover {
+	color: var(--wp--preset--color--red);
+}
