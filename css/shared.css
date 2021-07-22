@@ -1,0 +1,41 @@
+/**
+ * Shared styles between the frontend and the backend.
+ */
+
+/* = Entry footer. === */
+
+/* The "Posted on" text is in a paragraph. This is all we got as Gutenberg doesn't offer <span> tags. */
+.entry-footer > p {
+	display: inline;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+/* All the blocks in the entry footer should be on the same line. */
+.entry-footer .wp-block-post-author,
+.entry-footer .wp-block-post-author__byline,
+.entry-footer .wp-block-post-author__content,
+.entry-footer .wp-block-post-author__name,
+.entry-footer .wp-block-post-date {
+	display: inline;
+}
+
+/* The post author byline and name are wrapped in paragraph tags, but the design wants them on a single line. */
+.entry-footer .wp-block-post-author__byline {
+	font-size: inherit;
+}
+
+/* Add the dot separator before the post author. */
+.entry-footer .wp-block-post-author__content::before {
+	content: " \2022\ ";
+	margin-left: .5rem;
+	margin-right: .5rem;
+}
+
+.entry-footer .wp-block-post-author__name {
+	font-weight: inherit;
+	/* Override the default Core block style to put a spacer between the By" text, and the post author */
+	margin-left: .3125rem !important;
+}
+
+

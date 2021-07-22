@@ -633,44 +633,6 @@ Content
   max-width: calc(1px * var(--wp--custom--content--normal-width));
 }
 
-.entry-footer .wp-block-group__inner-container {
-  display: flex;
-}
-
-/* Gutenberg doesn't offer <span> tags, so the meta is in paragraphs. We need to override these styles */
-.editor-styles-wrapper .entry-footer p,
-.entry-footer p {
-  margin: 0;
-}
-
-/* Put a spacer between the "Posted on" text, and the post date. */
-.entry-footer .wp-block-post-date {
-  margin: 0 0 0 .3125rem;
-}
-
-/* Remove the extra space around the post author block */
-.editor-styles-wrapper .entry-footer .wp-block-post-author {
-  margin: 0;
-}
-
-/* The post author byline and name are wrapped in paragraph tags, but the design wants them on a single line. */
-.wp-block-post-author__content {
-  display: flex;
-}
-
-/* Add the dot separator before the post author. */
-.wp-block-post-author__content::before {
-  content: " \2022\ ";
-  margin-left: .5rem;
-  margin-right: .5rem;
-}
-
-/* Put a spacer between the "By" text, and the author name. */
-.editor-styles-wrapper p.wp-block-post-author__name,
-p.wp-block-post-author__name {
-  margin-left: .3125rem;
-}
-
 /*
 Templates
  */
