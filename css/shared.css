@@ -87,3 +87,15 @@
 .wp-block-post-title  a:hover {
 	color: var(--wp--preset--color--red);
 }
+
+/* If there are a previous and next link, they will be placed left and right. */
+.wp-block-query-pagination {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* If theres only a next link, place it right. */
+.wp-block-query-pagination-next {
+	text-align: right;
+	flex-grow: 1;
+}

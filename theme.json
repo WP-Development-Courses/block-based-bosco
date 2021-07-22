@@ -114,6 +114,16 @@
             "bottom": "2.618rem"
           }
         }
+      },
+      "core/query-pagination": {
+        "typography": {
+          "fontSize": "1.159rem"
+        },
+        "spacing": {
+          "margin": {
+            "top": "4.1875rem"
+          }
+        }
       }
     }
   }

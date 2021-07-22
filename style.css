@@ -520,24 +520,6 @@ Content
   margin: 0 0 1rem 0;
 }
 
-/* == Archives === */
-.posts-navigation {
-  font-size: 1.159rem;
-  margin-top: 4.1875rem;
-}
-
-.posts-navigation .wp-block-group__inner-container {
-  display: flex;
-}
-
-.posts-navigation .wp-block-group__inner-container div {
-  flex-grow: 1;
-}
-
-.posts-navigation .wp-block-group__inner-container div:nth-child(2) {
-  text-align: right;
-}
-
 /*
 Comments - Adapted from existing Bosco theme.
  */
