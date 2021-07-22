@@ -417,10 +417,6 @@ img {
 }
 
 /*
-Layout
- */
-
-/*
 Template Parts
  */
 
@@ -513,13 +509,6 @@ Content
   color: var(--wp--preset--color--red);
 }
 
-.wp-block-post-content.wp-block,
-.entry-content {
-  /* Fix aligned images from breaking out of the container */
-  clear: both;
-  overflow: hidden;
-}
-
 /* == Featured Content ==== */
 
 .entry-content h1 {
@@ -549,10 +538,6 @@ Content
   font-weight: 400;
   margin: 0 0 1rem 0;
 }
-
-/*
-Templates
- */
 
 /* == Archives === */
 .posts-navigation {

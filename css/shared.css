@@ -29,6 +29,13 @@
 	margin-top: 7.6875rem;
 }
 
+/* Fix aligned images from breaking out of the container */
+.block-editor-block-list__layout .wp-block,
+.wp-block-post-content {
+	clear: both;
+	overflow: hidden;
+}
+
 .entry-footer {
 	border-top: 1px solid var(--wp--preset--color--light-grey);
 	color: var(--wp--preset--color--dark-grey);
