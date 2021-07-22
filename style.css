@@ -432,27 +432,9 @@ img {
 Layout
  */
 
-/* These are the wrappers for all FSE blocks, the first on the frontend, the second in the Site Editor. */
-.wp-site-blocks,
-.editor-styles-wrapper .edit-site-block-editor__block-list {
-  max-width: calc(1px * var(--wp--custom--content--full-width));
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom: 5px solid var(--wp--preset--color--red);
-  border-top: 5px solid var(--wp--preset--color--red);
-}
-
-/* Colors */
-
 /*
 Template Parts
  */
-
-/* Header */
-.site-header {
-  border-bottom: 1px solid var(--wp--preset--color--light-grey);
-  padding: 2.618em 0;
-}
 
 .editor-styles-wrapper h1.wp-block-site-title,
 .wp-block-site-title {
@@ -520,33 +502,9 @@ Template Parts
   border-top: 1px solid var(--wp--preset--color--light-grey);
 }
 
-/*
-Footer
- */
-
-.site-footer {
-  border-top: 1px solid var(--wp--preset--color--light-grey);
-  color: var(--wp--preset--color--dark-grey);
-  margin-top: 3.75rem;
-  padding: 1.159rem 1.618rem;
-}
-
-.site-footer .block-editor-block-list__block {
-  margin: 0;
-}
-
-.site-footer p {
-  margin: 0;
-}
-
 /*--------------------------------------------------------------
 Content
 --------------------------------------------------------------*/
-
-/* The wrapper for all posts and pages */
-.entry {
-  margin-top: 7.6875rem;
-}
 
 /* == Post Title ==== */
 
@@ -567,21 +525,8 @@ Content
   color: var(--wp--preset--color--red);
 }
 
-/* == Featured Image ==== */
-
-.entry-featured-image {
-  /* Use `calc()` to number convert to pixels. */
-  max-width: calc(1px * var(--wp--custom--content--wide-width));
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .wp-block-post-content.wp-block,
 .entry-content {
-  /* Use `calc()` to number convert to pixels. */
-  max-width: calc(1px * var(--wp--custom--content--normal-width));
-  margin-left: auto;
-  margin-right: auto;
   /* Fix aligned images from breaking out of the container */
   clear: both;
   overflow: hidden;
@@ -615,22 +560,6 @@ Content
   font-style: italic;
   font-weight: 400;
   margin: 0 0 1rem 0;
-}
-
-/* === Entry Footer == */
-
-.entry-footer {
-  border-top: 1px solid var(--wp--preset--color--light-grey);
-  color:  var(--wp--preset--color--dark-grey);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1.811rem;
-  max-width: calc(1px * var(--wp--custom--content--normal-width));
-  padding-top: 1.12rem;
-}
-
-.entry-footer.wp-block {
-  max-width: calc(1px * var(--wp--custom--content--normal-width));
 }
 
 /*

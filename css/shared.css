@@ -2,7 +2,39 @@
  * Shared styles between the frontend and the backend.
  */
 
-/* = Entry footer. === */
+/* = Template parts == */
+
+.site-header {
+	border-bottom: 1px solid var(--wp--preset--color--light-grey);
+	border-top: 5px solid var(--wp--preset--color--red);
+	padding: 2.618em 0;
+}
+
+.site-footer {
+	border-bottom: 5px solid var(--wp--preset--color--red);
+	border-top: 1px solid var(--wp--preset--color--light-grey);
+	color: var(--wp--preset--color--dark-grey);
+	margin-top: 3.75rem;
+	padding: 1.159rem 1.618rem;
+}
+
+.site-footer p {
+	margin: 0;
+}
+
+/* = Entries === */
+
+/* The wrapper for all posts and pages */
+.entry {
+	margin-top: 7.6875rem;
+}
+
+.entry-footer {
+	border-top: 1px solid var(--wp--preset--color--light-grey);
+	color: var(--wp--preset--color--dark-grey);
+	margin-top: 1.811rem;
+	padding-top: 1.12rem;
+}
 
 /* The "Posted on" text is in a paragraph. This is all we got as Gutenberg doesn't offer <span> tags. */
 .entry-footer > p {

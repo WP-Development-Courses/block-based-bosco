@@ -30,6 +30,10 @@
         }
       ]
     },
+    "layout": {
+      "contentSize": "520px",
+      "wideWidth": "750px"
+    },
     "spacing": {
       "customPadding": true,
       "units": [ "rem" ]
