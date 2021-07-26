@@ -1,6 +1,6 @@
 /*
 Theme Name: Block-Based Bosco
-Version: 1.4
+Version: 1.4.1
 Requires PHP: 7.0
 Requires at least: 5.8
 Tested up to: 5.8
@@ -372,7 +372,12 @@ template {
 
 /*
 Global
- */
+*/
+
+/* Gutenberg bug: see https://github.com/WordPress/gutenberg/issues/33681 */
+body {
+  font-family: Lora, Georgia, serif;
+}
 
 img {
   height: auto;
@@ -414,6 +419,15 @@ img {
   top: 5px;
   width: auto;
   z-index: 100000;
+}
+
+/*--------------------------------------------------------------
+Blocks
+--------------------------------------------------------------*/
+
+/* Gutenberg bug */
+.wp-block-site-tagline {
+  font-weight: bold;
 }
 
 /*--------------------------------------------------------------
