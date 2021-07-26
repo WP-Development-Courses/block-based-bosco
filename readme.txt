@@ -18,6 +18,13 @@ Development for this theme is done on GitHub: https://github.com/WP-Development-
 
 == Changelog ==
 
+= 1.4.1 =
+
+* Release date: 26 July 2021
+* Tested with WordPress 5.8 and Gutenberg 11.1.0.
+* Gutenberg issue #33681: Add font family to body.
+* Gutenberg bug: Add bold style to Site Tagline on the frontend.
+
 = 1.4 =
 
 * Release date: 26 July 2021
