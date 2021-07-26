@@ -22,6 +22,55 @@
 	margin: 0;
 }
 
+/* == Navigation === */
+
+/* By default the navigation template part has a top and bottom border. */
+.wp-block-navigation {
+	border-top: 1px solid var(--wp--preset--color--light-grey);
+	border-bottom: 1px solid var(--wp--preset--color--light-grey);
+}
+
+/* If the navigation template part comes immediately after the header, we do not need the top border. */
+.site-header + .wp-block-navigation {
+	border-top: 0;
+}
+
+/* All links */
+.wp-block-navigation.wp-block-navigation a {
+	color: var(--wp--preset--color--black);
+	font-weight: bold;
+	padding: 1.159rem 1.618rem !important;
+	text-decoration: none;
+	word-wrap: break-word;
+}
+
+.wp-block-navigation-link__content:hover {
+	color: var(--wp--preset--color--red);
+}
+
+/* First level */
+.wp-block-navigation__container > .wp-block-navigation-link {
+	margin: 0 0.89rem;
+}
+
+.wp-block-navigation__container > .wp-block-navigation-link > .wp-block-navigation-link__content {
+	text-transform: uppercase;
+}
+
+.wp-block-navigation-link__submenu-icon {
+	color: var(--wp--preset--color--light-grey);
+}
+
+/* Second level and more */
+.has-child .wp-block-navigation-link__container .wp-block-navigation-link {
+	margin: 0;
+	border-top: 1px solid var(--wp--preset--color--light-grey);
+}
+
+.has-child .wp-block-navigation-link__container .wp-block-navigation-link:first-child {
+	border: none;
+}
+
 /* = Entries === */
 
 /* The wrapper for all posts and pages */

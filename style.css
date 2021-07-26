@@ -435,57 +435,6 @@ Template Parts
   margin: 0;
 }
 
-/* == Navigation === */
-
-/* By default the navigation template part has a top and bottom border. */
-.wp-block-navigation {
-  border-top: 1px solid var(--wp--preset--color--light-grey);
-  border-bottom: 1px solid var(--wp--preset--color--light-grey);
-}
-
-/* If the navigation template part comes immediately after the header, we do not need the top border. */
-.site-header + .wp-block-navigation {
-  border-top: 0;
-}
-
-/* Generic styles */
-
-/* All links. */
-
-.wp-block-navigation-link__content {
-  color: var(--wp--preset--color--black);
-  font-weight: bold;
-  padding: 1.159rem 1.618rem;
-  text-decoration: none;
-  word-wrap: break-word;
-}
-
-.wp-block-navigation-link__content:hover {
-  color: var(--wp--preset--color--red);
-}
-
-/* First level */
-.wp-block-navigation > .wp-block-navigation__container > li {
-  margin: 0 0.89rem;
-}
-
-.wp-block-navigation > .wp-block-navigation__container > li > a {
-  text-transform: uppercase;
-}
-
-.wp-block-navigation-link__submenu-icon {
-  color: var(--wp--preset--color--light-grey);
-}
-
-/* Second level and more */
-.wp-block-navigation ul ul li:first-child {
-  border: none;
-}
-.wp-block-navigation ul ul li {
-  margin: 0;
-  border-top: 1px solid var(--wp--preset--color--light-grey);
-}
-
 /*--------------------------------------------------------------
 Content
 --------------------------------------------------------------*/
