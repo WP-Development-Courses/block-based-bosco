@@ -18,6 +18,18 @@ Development for this theme is done on GitHub: https://github.com/WP-Development-
 
 == Changelog ==
 
+= 1.4 =
+
+* Release date: 26 July 2021
+* Tested with WordPress 5.8 and Gutenberg 11.1.0.
+* Update `theme.json` to align with the new naming and schema.
+* Add names to colors in the default palette.
+* Migrate `query-loop` to `post-template`.
+* Migrate Group block to current markup.
+* Refactor templates and styles to use the Layout controls.
+* Refactor stylesheets to account for iFramed editors.
+* Update credit link to point to theme page on WordPress.org.
+
 = 1.3 =
 
 * Release date: 25 February 2021
