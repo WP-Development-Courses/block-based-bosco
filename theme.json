@@ -68,11 +68,24 @@
         "typography": {
           "fontSize": "1.811rem",
           "lineHeight": "1.3"
+        },
+        "spacing": {
+          "margin": {
+            "bottom": "0px",
+            "top": "0px"
+          }
         }
       },
       "core/site-tagline": {
         "typography": {
-          "fontSize": "1.618rem"
+          "fontSize": "1.618rem",
+          "fontWeight": "bold"
+        },
+        "spacing": {
+          "margin": {
+            "bottom": "0px",
+            "top": "0px"
+          }
         }
       },
       "core/heading/h2": {

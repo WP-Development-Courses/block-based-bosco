@@ -416,25 +416,6 @@ img {
   z-index: 100000;
 }
 
-/*
-Template Parts
- */
-
-.editor-styles-wrapper h1.wp-block-site-title,
-.wp-block-site-title {
-  margin: 0;
-}
-
-.wp-block-site-title a {
-  text-decoration: none;
-}
-
-.editor-styles-wrapper p.wp-block-site-tagline,
-.wp-block-site-tagline {
-  font-weight: bold;
-  margin: 0;
-}
-
 /*--------------------------------------------------------------
 Content
 --------------------------------------------------------------*/
