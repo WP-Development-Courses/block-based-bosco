@@ -1,0 +1,154 @@
+/**
+ * Shared styles between the frontend and the backend.
+ */
+
+/* = Template parts == */
+
+.site-header {
+	border-bottom: 1px solid var(--wp--preset--color--light-grey);
+	border-top: 5px solid var(--wp--preset--color--red);
+	padding: 2.618em 0;
+}
+
+.site-footer {
+	border-bottom: 5px solid var(--wp--preset--color--red);
+	border-top: 1px solid var(--wp--preset--color--light-grey);
+	color: var(--wp--preset--color--dark-grey);
+	margin-top: 3.75rem;
+	padding: 1.159rem 1.618rem;
+}
+
+.site-footer p {
+	margin: 0;
+}
+
+/* == Navigation === */
+
+/* By default the navigation template part has a top and bottom border. */
+.wp-block-navigation {
+	border-top: 1px solid var(--wp--preset--color--light-grey);
+	border-bottom: 1px solid var(--wp--preset--color--light-grey);
+}
+
+/* If the navigation template part comes immediately after the header, we do not need the top border. */
+.site-header + .wp-block-navigation {
+	border-top: 0;
+}
+
+/* All links */
+.wp-block-navigation.wp-block-navigation a {
+	color: var(--wp--preset--color--black);
+	font-weight: bold;
+	padding: 1.159rem 1.618rem !important;
+	text-decoration: none;
+	word-wrap: break-word;
+}
+
+.wp-block-navigation-link__content:hover {
+	color: var(--wp--preset--color--red);
+}
+
+/* First level */
+.wp-block-navigation__container > .wp-block-navigation-link {
+	margin: 0 0.89rem;
+}
+
+.wp-block-navigation__container > .wp-block-navigation-link > .wp-block-navigation-link__content {
+	text-transform: uppercase;
+}
+
+.wp-block-navigation-link__submenu-icon {
+	color: var(--wp--preset--color--light-grey);
+}
+
+/* Second level and more */
+.has-child .wp-block-navigation-link__container .wp-block-navigation-link {
+	margin: 0;
+	border-top: 1px solid var(--wp--preset--color--light-grey);
+}
+
+.has-child .wp-block-navigation-link__container .wp-block-navigation-link:first-child {
+	border: none;
+}
+
+/* = Entries === */
+
+/* The wrapper for all posts and pages */
+.entry {
+	margin-top: 7.6875rem;
+}
+
+/* Fix aligned images from breaking out of the container */
+.block-editor-block-list__layout .wp-block,
+.wp-block-post-content {
+	clear: both;
+	overflow: hidden;
+}
+
+.entry-footer {
+	border-top: 1px solid var(--wp--preset--color--light-grey);
+	color: var(--wp--preset--color--dark-grey);
+	margin-top: 1.811rem;
+	padding-top: 1.12rem;
+}
+
+/* The "Posted on" text is in a paragraph. This is all we got as Gutenberg doesn't offer <span> tags. */
+.entry-footer > p {
+	display: inline;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+/* All the blocks in the entry footer should be on the same line. */
+.entry-footer .wp-block-post-author,
+.entry-footer .wp-block-post-author__byline,
+.entry-footer .wp-block-post-author__content,
+.entry-footer .wp-block-post-author__name,
+.entry-footer .wp-block-post-date {
+	display: inline;
+}
+
+/* The post author byline and name are wrapped in paragraph tags, but the design wants them on a single line. */
+.entry-footer .wp-block-post-author__byline {
+	font-size: inherit;
+}
+
+/* Add the dot separator before the post author. */
+.entry-footer .wp-block-post-author__content::before {
+	content: " \2022\ ";
+	margin-left: .5rem;
+	margin-right: .5rem;
+}
+
+.entry-footer .wp-block-post-author__name {
+	font-weight: inherit;
+	/* Override the default Core block style to put a spacer between the By" text, and the post author */
+	margin-left: .3125rem !important;
+}
+
+/* = Blocks == */
+
+.wp-block-site-title a {
+	text-decoration: none;
+}
+
+.wp-block-post-title a {
+	color: var(--wp--preset--color--black);
+	text-decoration: none;
+}
+
+.wp-block-post-title a:hover {
+	color: var(--wp--preset--color--red);
+}
+
+/* If there are a previous and next link, they will be placed left and right. */
+.wp-block-query-pagination {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* If theres only a next link, place it right. */
+.wp-block-query-pagination-next {
+	text-align: right;
+	flex-grow: 1;
+}

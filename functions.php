@@ -6,10 +6,24 @@
 function block_based_bosco_add_theme_supports() {
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'post-thumbnails' );
+
+	add_theme_support( 'editor-styles' );
+	add_editor_style( [
+		'css/editor-style.css',
+		'css/shared.css',
+		block_based_bosco_font_url()
+	] );
 }
 add_action( 'after_setup_theme', 'block_based_bosco_add_theme_supports' );
 
 function block_based_bosco_enqueue_styles() {
+	wp_enqueue_style(
+		'block-based-bosco-shared-style',
+		get_stylesheet_directory_uri() . '/css/shared.css',
+		[],
+		wp_get_theme()->get( 'Version' )
+	);
+
 	wp_enqueue_style(
 		'block-based-bosco-style',
 		get_stylesheet_uri(),
@@ -20,7 +34,6 @@ function block_based_bosco_enqueue_styles() {
 	wp_enqueue_style( 'block-based-bosco-lora', block_based_bosco_font_url(), array(), null );
 }
 add_action( 'wp_enqueue_scripts', 'block_based_bosco_enqueue_styles' );
-add_action( 'enqueue_block_editor_assets', 'block_based_bosco_enqueue_styles' );
 
 /**
  * Remove some of the default Gutenberg block styles.

@@ -1,9 +1,9 @@
 /*
 Theme Name: Block-Based Bosco
-Version: 1.3
+Version: 1.4
 Requires PHP: 7.0
-Requires at least: 5.6
-Tested up to: 5.6.2
+Requires at least: 5.8
+Tested up to: 5.8
 Description: Experimental Full Site Editing Theme
 Author: Frank Klein
 Author URI: https://wpdevelopment.courses/
@@ -379,18 +379,6 @@ img {
   max-width: 100%;
 }
 
-.aligncenter {
-  text-align: center;
-}
-
-.alignleft {
-  float: left;
-}
-
-.alignright {
-  float: right;
-}
-
 /* Screen Reader Text */
 .screen-reader-text {
   border: 0;
@@ -428,164 +416,9 @@ img {
   z-index: 100000;
 }
 
-/*
-Layout
- */
-
-/* These are the wrappers for all FSE blocks, the first on the frontend, the second in the Site Editor. */
-.wp-site-blocks,
-.editor-styles-wrapper .edit-site-block-editor__block-list {
-  max-width: calc(1px * var(--wp--custom--content--full-width));
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom: 5px solid var(--wp--preset--color--red);
-  border-top: 5px solid var(--wp--preset--color--red);
-}
-
-/* Colors */
-
-/*
-Template Parts
- */
-
-/* Header */
-.site-header {
-  border-bottom: 1px solid var(--wp--preset--color--light-grey);
-  padding: 2.618em 0;
-}
-
-.editor-styles-wrapper h1.wp-block-site-title,
-.wp-block-site-title {
-  margin: 0;
-}
-
-.wp-block-site-title a {
-  text-decoration: none;
-}
-
-.editor-styles-wrapper p.wp-block-site-tagline,
-.wp-block-site-tagline {
-  font-weight: bold;
-  margin: 0;
-}
-
-/* == Navigation === */
-
-/* By default the navigation template part has a top and bottom border. */
-.wp-block-navigation {
-  border-top: 1px solid var(--wp--preset--color--light-grey);
-  border-bottom: 1px solid var(--wp--preset--color--light-grey);
-}
-
-/* If the navigation template part comes immediately after the header, we do not need the top border. */
-.site-header + .wp-block-navigation {
-  border-top: 0;
-}
-
-/* Generic styles */
-
-/* All links. */
-
-.wp-block-navigation-link__content {
-  color: var(--wp--preset--color--black);
-  font-weight: bold;
-  padding: 1.159rem 1.618rem;
-  text-decoration: none;
-  word-wrap: break-word;
-}
-
-.wp-block-navigation-link__content:hover {
-  color: var(--wp--preset--color--red);
-}
-
-/* First level */
-.wp-block-navigation > .wp-block-navigation__container > li {
-  margin: 0 0.89rem;
-}
-
-.wp-block-navigation > .wp-block-navigation__container > li > a {
-  text-transform: uppercase;
-}
-
-.wp-block-navigation-link__submenu-icon {
-  color: var(--wp--preset--color--light-grey);
-}
-
-/* Second level and more */
-.wp-block-navigation ul ul li:first-child {
-  border: none;
-}
-.wp-block-navigation ul ul li {
-  margin: 0;
-  border-top: 1px solid var(--wp--preset--color--light-grey);
-}
-
-/*
-Footer
- */
-
-.site-footer {
-  border-top: 1px solid var(--wp--preset--color--light-grey);
-  color: var(--wp--preset--color--dark-grey);
-  margin-top: 3.75rem;
-  padding: 1.159rem 1.618rem;
-}
-
-.site-footer .block-editor-block-list__block {
-  margin: 0;
-}
-
-.site-footer p {
-  margin: 0;
-}
-
 /*--------------------------------------------------------------
 Content
 --------------------------------------------------------------*/
-
-/* The wrapper for all posts and pages */
-.entry {
-  margin-top: 7.6875rem;
-}
-
-/* == Post Title ==== */
-
-.wp-block-post-title {
-  /* Use `calc()` to number convert to pixels. */
-  max-width: calc(1px * var(--wp--custom--content--wide-width));
-  margin-bottom: 2.618rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.wp-block-post-title a {
-  color: var(--wp--preset--color--black);
-  text-decoration: none;
-}
-
-.wp-block-post-title  a:hover {
-  color: var(--wp--preset--color--red);
-}
-
-/* == Featured Image ==== */
-
-.entry-featured-image {
-  /* Use `calc()` to number convert to pixels. */
-  max-width: calc(1px * var(--wp--custom--content--wide-width));
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.wp-block-post-content.wp-block,
-.entry-content {
-  /* Use `calc()` to number convert to pixels. */
-  max-width: calc(1px * var(--wp--custom--content--normal-width));
-  margin-left: auto;
-  margin-right: auto;
-  /* Fix aligned images from breaking out of the container */
-  clear: both;
-  overflow: hidden;
-}
 
 /* == Featured Content ==== */
 
@@ -615,82 +448,6 @@ Content
   font-style: italic;
   font-weight: 400;
   margin: 0 0 1rem 0;
-}
-
-/* === Entry Footer == */
-
-.entry-footer {
-  border-top: 1px solid var(--wp--preset--color--light-grey);
-  color:  var(--wp--preset--color--dark-grey);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1.811rem;
-  max-width: calc(1px * var(--wp--custom--content--normal-width));
-  padding-top: 1.12rem;
-}
-
-.entry-footer.wp-block {
-  max-width: calc(1px * var(--wp--custom--content--normal-width));
-}
-
-.entry-footer .wp-block-group__inner-container {
-  display: flex;
-}
-
-/* Gutenberg doesn't offer <span> tags, so the meta is in paragraphs. We need to override these styles */
-.editor-styles-wrapper .entry-footer p,
-.entry-footer p {
-  margin: 0;
-}
-
-/* Put a spacer between the "Posted on" text, and the post date. */
-.entry-footer .wp-block-post-date {
-  margin: 0 0 0 .3125rem;
-}
-
-/* Remove the extra space around the post author block */
-.editor-styles-wrapper .entry-footer .wp-block-post-author {
-  margin: 0;
-}
-
-/* The post author byline and name are wrapped in paragraph tags, but the design wants them on a single line. */
-.wp-block-post-author__content {
-  display: flex;
-}
-
-/* Add the dot separator before the post author. */
-.wp-block-post-author__content::before {
-  content: " \2022\ ";
-  margin-left: .5rem;
-  margin-right: .5rem;
-}
-
-/* Put a spacer between the "By" text, and the author name. */
-.editor-styles-wrapper p.wp-block-post-author__name,
-p.wp-block-post-author__name {
-  margin-left: .3125rem;
-}
-
-/*
-Templates
- */
-
-/* == Archives === */
-.posts-navigation {
-  font-size: 1.159rem;
-  margin-top: 4.1875rem;
-}
-
-.posts-navigation .wp-block-group__inner-container {
-  display: flex;
-}
-
-.posts-navigation .wp-block-group__inner-container div {
-  flex-grow: 1;
-}
-
-.posts-navigation .wp-block-group__inner-container div:nth-child(2) {
-  text-align: right;
 }
 
 /*

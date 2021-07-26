@@ -1,25 +1,19 @@
-<!-- wp:group {"className":"site"} -->
-<div class="wp-block-group site"><div class="wp-block-group__inner-container"><!-- wp:template-part {"slug":"header","theme":"block-based-bosco","className":"site-header"} /-->
+<!-- wp:group {"layout":{"contentSize":"840px"}} -->
+<div class="wp-block-group site"><!-- wp:template-part {"slug":"header","theme":"block-based-bosco","tagName":"header","className":"site-header"} /-->
 
   <!-- wp:navigation {"orientation":"horizontal"} /-->
 
-  <!-- wp:group {"className":"site-content"} -->
-  <div class="wp-block-group site-content"><div class="wp-block-group__inner-container"><!-- wp:group {"className":"entry"} -->
-    <div class="wp-block-group entry"><div class="wp-block-group__inner-container"><!-- wp:group {"className":"entry-header"} -->
-      <div class="wp-block-group entry-header"><div class="wp-block-group__inner-container"><!-- wp:post-title {"textAlign":"center"} /--></div></div>
-      <!-- /wp:group -->
+    <!-- wp:group {"className":"entry"} -->
+    <div class="wp-block-group entry"><!-- wp:post-title {"textAlign":"center"} /-->
 
-      <!-- wp:group {"className":"entry-featured-image"} -->
-      <div class="wp-block-group entry-featured-image"><div class="wp-block-group__inner-container"><!-- wp:post-featured-image {"textAlign":"center"} /--></div></div>
-      <!-- /wp:group -->
+      <!-- wp:post-featured-image /-->
 
-      <!-- wp:post-content /-->
+      <!-- wp:post-content {"layout":{"inherit":true}} /-->
 
-      <!-- wp:template-part {"slug":"entry-footer","theme":"block-based-bosco"} /-->
+      <!-- wp:template-part {"slug":"entry-footer","theme":"block-based-bosco","layout":{"inherit":true}} /-->
 
-      <!-- wp:template-part {"slug":"entry-comments","theme":"block-based-bosco"} /-->
+      <!-- wp:post-comments /-->
+    </div><!-- /wp:group -->
 
-      <!-- wp:template-part {"slug":"footer","theme":"block-based-bosco","className":"site-footer"} /--></div></div>
-    <!-- /wp:group --></div></div>
-  <!-- /wp:group --></div></div>
+    <!-- wp:template-part {"slug":"footer","theme":"block-based-bosco","className":"site-footer"} /--></div>
 <!-- /wp:group -->

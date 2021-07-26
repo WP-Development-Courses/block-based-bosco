@@ -1,0 +1,10 @@
+/**
+ * Backend styles.
+ */
+
+/* = Entry footer. === */
+
+/* Put a spacer between the "Posted on" text, and the post date. The space in the template part is not respected .*/
+.entry-footer .wp-block-post-date {
+	margin-left: .3125rem !important;
+}
