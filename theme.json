@@ -141,5 +141,17 @@
         }
       }
     }
-  }
+  },
+  "templateParts": [
+    {
+      "area": "footer",
+      "name": "footer",
+      "title": "Footer"
+    },
+    {
+      "area": "header",
+      "name": "header",
+      "title": "Header"
+    }
+  ]
 }
